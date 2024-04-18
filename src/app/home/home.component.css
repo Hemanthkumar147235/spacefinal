@@ -1,0 +1,67 @@
+
+
+button:hover{
+    border: 60px solid rgba(209, 209, 209, 0.649);
+}
+@media screen and (min-width:425px) {
+    body{
+        background-image: url('/assets/home/background-home-mobile.jpg');
+        background-size:cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        color:#FFFFFF;
+        height: 140vh;
+        
+        
+    }
+    .container{
+        padding-top: 110px;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+ 
+}
+ 
+
+@media screen and (min-width:768px) {
+    body{
+        background-image: url('/assets/home/background-home-tablet.jpg');
+        background-size:cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        color:#FFFFFF;
+        height: 130vh;
+        
+    }
+    .container{
+        padding-top: 200px;
+        padding-left: 80px;
+    }
+    .expp{
+        padding-right: 50px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    body{
+        background-image: url('/assets/home/background-home-desktop.jpg');
+        background-size:cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        color:#FFFFFF;
+        height: 100vh;
+        
+    }
+    .container{
+    padding-top: 170px;
+    padding-left: 100px;
+    text-align:start;
+}
+
+}

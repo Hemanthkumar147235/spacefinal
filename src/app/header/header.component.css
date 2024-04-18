@@ -1,0 +1,15 @@
+
+.trans{
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    background-attachment: fixed;
+}
+li {
+    border-bottom: 3px solid transparent; /* Add transparent border */
+    transition: border-bottom 0.3s; /* Add smooth transition effect */
+}
+
+li:hover {
+    border-bottom:3px solid white ;
+}
+

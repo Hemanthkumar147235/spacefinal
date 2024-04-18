@@ -1,0 +1,55 @@
+
+
+
+<body>
+    
+
+
+    <app-header></app-header>
+    <div [ngSwitch]="num">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div style="padding-left: 30px; "><h2 >03 SPACE LAUNCH 101</h2>
+                    </div>
+                        <div class="container">
+                            <div class="" style="display: flex;flex-direction: row; align-items:self-start ;">
+                                <div class=" "   >
+                                    <ul class="list-inline  pt-5 " >
+                                        <li class="p-3" ><button input="text" (click)="func(1)" style="border-radius:50%;width: 60px;height:60px; font-size: 30px;">1</button></li>
+                                        <li class="p-3"><button input="text" (click)="func(2)" style="border-radius:50%;width: 60px;height:60px; font-size: 30px;">2</button></li>
+                                        <li  class="p-3"><button input="text" (click)="func(3)" style="border-radius:50%;width: 60px;height:60px; font-size: 30px;">3</button></li>
+                                    </ul>
+                                </div>
+                                <div class="" *ngSwitchCase="1" style="padding-left:10px;">
+                                    <h5 style="padding-top:60px;" >THE TERMINOLOGY.....</h5>
+                                    
+                                    <H1 style="padding-top:10px;">LAUNCH VEHICLE</H1>
+                                    <P style="padding-top:20px;">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</P>
+                                </div>
+                                <div class="" *ngSwitchCase="2"style="padding-left:10px;">
+                                    <h5 style="padding-top:60px;" >THE TERMINOLOGY.....</h5>
+                                    <H1 style="padding-top:10px;">SPACEPORT</H1>
+                                    <P style="padding-top:20px;">A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth's rotation for launch. </P>
+                                </div>
+                                <div class="" *ngSwitchCase="3"style="padding-left:10px;">
+                                    <h5 style="padding-top:60px;" >THE TERMINOLOGY.....</h5>
+                                    <H1 style="padding-top:10px;">SPACE CAPSULE</H1>
+                                    <P style="padding-top:20px;">A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.</P>
+                                </div>       
+                            </div>
+                        </div>
+                </div>
+        
+               
+        
+            <div class="col col-img ">
+                <img *ngSwitchCase="1" src="\assets\technology\image-launch-vehicle-portrait.jpg" alt="" style="padding-left: 100px;padding-bottom: 70px;" >
+                <img *ngSwitchCase="2" src="\assets\technology\image-spaceport-portrait.jpg" alt="" style="padding-left: 100px;padding-bottom: 70px;" >
+                <img *ngSwitchCase="3" src="\assets\technology\image-space-capsule-portrait.jpg" alt="" style="padding-left: 100px;padding-bottom: 70px;" >
+            </div>
+        </div>
+          
+    </div>
+    </div>
+    </body>
